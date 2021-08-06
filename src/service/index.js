@@ -1,8 +1,9 @@
+  
 const CONFIG = {
-    url: 'https://cloud.squidex.io/',
+    url: 'https://cloud.squidex.io',
     appName: 'nodoubt223rd',
-    clientId: 'nodoubt223rd:default',
-    clientSecret: 'jrkb8mqbjoltb03t2csxhuxutztvwh8llwdp2h2vq5ox'
+    clientId: 'nodoubt223rd:webuser',
+    clientSecret: 'caydxtgqqhpwhusyjthldz9fpwfserfkqeearjeqgcqx'
 };
 
 function getBearerToken() {
