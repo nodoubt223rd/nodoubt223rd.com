@@ -1,0 +1,175 @@
+/* right sidebar widget area css
+============================================================================================ */
+.widget_area_right{
+    padding-right: 0px;
+    padding-left: 0px;
+    .blog_detail_search_area{
+        .input-group{
+            background: url(../img/search_img.png) no-repeat;
+            width: 229px;
+            height: 36px;
+            input{
+                background: transparent;
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                padding-left: 18px;
+                &:focus{
+                    border: none;
+                    box-shadow: none;
+                    border-radius: none;
+                    background: transparent;
+                    color: #fff;
+                    outline: none;
+                    outline-offset: none;
+                }
+            }
+            .input-group-btn{
+                .search{
+                    background: transparent;
+                    border: none;
+                    text-shadow: none;
+                    border-radius: none;
+                    box-shadow: none;
+                    i{
+                        color: #fff;
+
+                    }
+                }
+            } 
+        }
+    }
+    .right_sidebar_widget{
+        padding-top: 100px;
+        overflow: hidden;
+        h3{
+            font-size: 27px;
+            font-family: 'Octopus_300-Regular';
+            text-transform: uppercase;
+            color: #fff;
+            padding-bottom: 50px;
+        }
+        a{
+            display: block;
+            line-height: 24px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Octopus_300-Regular';
+            &:hover{
+                color: #1fbad6;
+                text-decoration: none;
+            }
+        }
+        ul{
+            width: 232px;
+            li{
+               
+                margin-bottom: 3px;
+                float: left;
+                width: 49%;
+                margin-right: 1%;
+                a{
+                    font-family: 'Octopus_300-Regular';
+                    text-transform: uppercase;
+                    color: #fff;
+                    background: #464651;
+                    text-align: center;
+                    line-height: 40px;
+                }
+                &:nth-child(3){
+                    width: 32.33%;
+                }
+                &:nth-child(4){
+                    width: 32.33%;
+                }
+                &:nth-child(5){
+                    width: 32.33%;
+                }
+            }
+        }
+        .right_sidbar_tag{
+            li{
+                margin-bottom: 3px;
+                float: left;
+                width: 49%;
+                margin-right: 1%;
+                position: relative;
+                z-index: 3;
+                overflow: hidden;
+                a{
+                    font-family: 'Octopus_300-Regular';
+                    text-transform: uppercase;
+                    color: #fff;
+                    background: transparent;
+                    text-align: center;
+                    line-height: 40px;
+                    z-index: 4;
+                    &:hover{
+                        color: #1fbad6;
+                    }
+                }
+                &:nth-child(3){
+                    width: 32.33%;
+                }
+                &:nth-child(4){
+                    width: 32.33%;
+                }
+                &:nth-child(5){
+                    width: 32.33%;
+                }
+                &:before{
+                    content: "";
+                    background: #464651;
+                    position: absolute;
+                    width: 136px;
+                    height: 100%;
+                    z-index: -1;
+                    transform: skew(-45deg);
+                }
+            }
+        }
+        .media{
+            padding-bottom: 15px;
+            .media-left{
+                .running_box{
+                    display: inline-block;
+                    width: 100px;
+                    height: 109px;
+                    overflow: hidden;
+                    margin-right: 20px;
+                    .running_image_main_box{
+                        width: 106px;
+                        height: 170px;
+                        overflow: hidden;
+                        display: block;
+                        position: relative;
+                        transform: rotate(45deg);    
+                        .running_image_box{
+                            transform: rotate(-45deg);
+                            margin-top: 10px;
+                            margin-left: -23px;
+                        }
+                    }
+                }
+            }
+            .media-body{
+                font-size: 14px;
+                font-family: 'Octopus_300-Regular';
+                color: #b7b7b7;
+                line-height: 24px;
+                h4{
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: 'Octopus_300-Regular';
+                    text-transform: uppercase;
+                    margin-top: 8px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+/* right sidebar widget area css
+============================================================================================ */

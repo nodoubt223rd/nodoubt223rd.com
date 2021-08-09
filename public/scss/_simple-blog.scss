@@ -1,0 +1,233 @@
+/* simple blog content area main css
+============================================================================================ */
+.simple_blog_area{
+    background: #151525;
+    position: relative;
+    padding: 100px 0px;
+    .simple_blog_shadow{
+        background: url("../img/simple_blog_shadow.png") no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 803px;
+    }
+    .simple_blog_psot{
+        border-bottom: 1px solid #2d2d3b;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        position: relative;
+        .blog_date{
+            .blog_box{
+                display: inline-block;
+                width: 330px;
+                height: 216px;
+                overflow: hidden;
+                position: relative;
+                z-index: 3;
+                .blog_image_main_box{
+                    width: 492px;
+                    height: 790px;
+                    overflow: hidden;
+                    display: block;
+                    position: relative;
+                    transform: rotate(45deg);        
+                    margin-left: -156px;
+                    margin-top: -74px;
+                    .blog_image_box{
+                        transform: rotate(-45deg);
+                        margin-top: 10px;
+                        margin-left: -45px;
+                    }
+                }
+                i{
+                    position: absolute;
+                    left: -105%;
+                    right: 0;
+                    text-align: center;
+                    transform: translateX(0) translateY(-50%);
+                    top: 50%;
+                    color: #fff;
+                    z-index: 2;
+                    @include transition;
+                }
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 0 0 0;
+                    border-color: transparent transparent rgba(31, 186, 214, 0.80) transparent;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    @include transition;
+                }
+                &:hover{
+                    i{
+                        left: 0;
+                    }
+                    &:before{
+                        border-width: 0 0 483px 483px;
+                    }
+                }
+            }
+        }
+        .simple_blog_content_area{
+            padding: 0px 0px 0px 30px;
+            overflow: hidden;
+            
+            h3{
+                padding: 30px 0px 40px;
+                a{
+                    color: #fff;
+                    font-family: 'Octopus_300-Regular';
+                    font-size: 27px;
+                    text-decoration: none;
+                }
+                &:hover, &:focus{
+                    a{
+                        color: #1fbad6;
+                    }
+                }
+            }
+            h4{
+                color: #b7b7b7;
+                font-size: 14px;
+                font-family: 'Octopus_300-Regular';
+                padding:0px 0px 25px;
+                span{
+                    color: #fff;
+                    font-size: 14px;
+                    font-family: 'Octopus_300-Regular';
+                    margin-left: 10px;
+                    & + span{
+                        margin-left: 0px;
+                    }
+                }
+            }
+            h5{
+                color: #fff;
+                font-size: 14px;
+                font-family: 'Octopus_300-Regular';
+                padding-bottom: 10px;
+                padding:0px 0px 25px;
+                i{
+                    color: #b7b7b7;
+                    margin-right: 10px;
+                    & + i{
+                        margin-left: 30px;
+                    }
+                }
+            }
+            p{
+                color: #b7b7b7;
+                font-size: 14px;
+                font-family: 'Octopus_300-Regular';
+                line-height: 24px;
+                padding-bottom: 36px;
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .blog_paisination{
+        text-align: center;
+        position: relative;
+        a{
+            height: 36px;
+            width: 36px;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 36px;
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+            z-index: 3;
+            margin-right: 8px;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 150%;
+                height: 100%;
+                z-index: -1;
+                transform: skew(-45deg);
+            }
+            &.active{
+                &:before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 150%;
+                    height: 100%;
+                    z-index: -1;
+                    transform: skew(-45deg);
+                    background: #1fbad6;
+                }
+            }
+            &:hover, &:focus{
+                &:before{
+                    background: #1fbad6;
+                }
+            }
+        }
+        .next{
+            height: 36px;
+            width: 80px;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 36px;
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+            z-index: 3;
+            margin-right: 8px;
+            text-transform: uppercase;
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 150px;
+                height: 100%;
+                z-index: -2;
+                transform: skew(-45deg);
+                background: #09091a;
+                left: 0;
+                top: 0;
+            }
+            &:before{
+                content: "";
+                background: #1fbad6;
+                display: block;
+                width: 18px;
+                height: 65px;
+                position: absolute;
+                left: -14px;
+                top: 0px;
+                z-index: -1;
+                transform: skew(-45deg);
+                @include transition;
+            }
+            &:hover{
+                &:before{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+.simple_blog_right_content{
+    padding: 0px !important;
+}
+.simple_blog_right_content_mg{
+    margin: 0px 30px !important;
+}
+
+/* simple blog content area main css
+============================================================================================ */
