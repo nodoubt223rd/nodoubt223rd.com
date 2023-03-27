@@ -1,0 +1,67 @@
+
+
+@font-face {
+	font-family:'Octopus_100-Regular';
+	src: url('Octopus_100_gdi.eot');
+	src: url('Octopus_100_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Octopus_100_gdi.woff') format('woff'),
+		url('Octopus_100_gdi.ttf') format('truetype'),
+		url('Octopus_100_gdi.otf') format('opentype'),
+		url('Octopus_100_gdi.svg#Octopus_100-Regular') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0021-007E;
+}
+
+
+
+@font-face {
+	font-family:'Octopus_300-Regular';
+	src: url('Octopus_300_gdi.eot');
+	src: url('Octopus_300_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Octopus_300_gdi.woff') format('woff'),
+		url('Octopus_300_gdi.ttf') format('truetype'),
+		url('Octopus_300_gdi.otf') format('opentype'),
+		url('Octopus_300_gdi.svg#Octopus_300-Regular') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0021-007E;
+}
+
+
+
+
+
+@font-face {
+	font-family:'Octopus_500-Regular';
+	src: url('Octopus_500_gdi.eot');
+	src: url('Octopus_500_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Octopus_500_gdi.woff') format('woff'),
+		url('Octopus_500_gdi.ttf') format('truetype'),
+		url('Octopus_500_gdi.otf') format('opentype'),
+		url('Octopus_500_gdi.svg#Octopus_500-Regular') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0021-007E;
+}
+
+
+
+
+
+@font-face {
+	font-family:'Octopus_700-Regular';
+	src: url('Octopus_700_gdi.eot');
+	src: url('Octopus_700_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Octopus_700_gdi.woff') format('woff'),
+		url('Octopus_700_gdi.ttf') format('truetype'),
+		url('Octopus_700_gdi.otf') format('opentype'),
+		url('Octopus_700_gdi.svg#Octopus_700-Regular') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0021-007E;
+}

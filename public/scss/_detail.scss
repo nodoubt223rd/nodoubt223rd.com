@@ -1,0 +1,180 @@
+/* cours detail area 
+============================================================================================ */
+.course_detail_area{
+    background: #151525;
+    position: relative;
+    padding: 100px 0px;
+    .course_detail_shadow{
+        background: url("../img/course_detail_shadow.png") no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+    }
+    .course_area_total{
+        overflow: hidden;
+        .detail_box{
+            display: inline-block;
+            width: 529px;
+            height: 648px;
+            overflow: hidden;
+            position: relative;
+            .detail_image_main_box{
+                width: 768px;
+                height: 1000px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                transform: rotate(45deg);        
+                margin-left: calc(283px - 360px);
+                margin-top: -60px;
+                margin-left: -124px;
+                .detail_image_box{
+                    transform: rotate(-45deg);
+                    margin-top: 10px;
+                    margin-left: 8px;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 0 0;
+                border-color: transparent transparent rgba(255, 255, 255, 0.20) transparent;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+                @include transition;
+            }
+            &:hover{
+                &:after{
+                    border-width: 0 0 530px 530px;
+                }
+            }
+            .course_detail_hover_content{
+                position: absolute;
+                right: -100%;
+                top: 0;
+                display: inline-block;
+                width: 235px;
+                height: 100%;
+                overflow: hidden;
+                @include transition;
+                transition-delay: 100ms;
+                .course_detail_image_hover_content{
+                    width: 600px;
+                    height: 745px;
+                    overflow: hidden;
+                    display: block;
+                    position: relative;
+                    transform: rotate(45deg);        
+                    margin-left: calc(283px - 360px);
+                    margin-left: -206px;
+                    z-index: 2;
+                    .course_detail_image_box_hover_content{
+                        transform: rotate(-45deg);
+                        margin-top: 10px;
+                        margin-left: 57px;
+                        background: rgba(9, 9, 26, 0.8);
+                        width: 235px;
+                        height: 100%;
+                        position: relative;
+                        right: -134px;
+                        top: -35px;
+                        padding: 56px 30px;
+                        .detail_section{
+                            font-size: 36px;
+                            font-family: 'Octopus_300-Regular';
+                            border-bottom: 1px solid #8a8991;
+                            padding: 25px 0px;
+                            h2{
+                                span{
+                                    font-size: 16px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            h3{
+                                font-size: 27px;
+                                color: #fff;
+                                font-family: 'Octopus_300-Regular';
+                                span{
+                                    font-size: 16px;
+                                    font-family: 'Octopus_300-Regular';
+                                }
+                            }
+                            .timer{
+                                float: left;
+                                overflow: hidden;
+                                color: #fff;
+                                font-size: 14px;
+                                &:before{
+                                    content: "\f017";
+                                    display: inline-block;
+                                    font: normal normal normal 14px/1 FontAwesome;
+                                    font-size: inherit;
+                                    text-rendering: auto;
+                                    float: left;
+                                    overflow: hidden;
+                                    font-size: 16px;
+                                    margin-right: 15px;
+                                    color: #1fbad6;
+                                    line-height: 24px;
+                                }
+                                h4{
+                                    overflow: hidden;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                }
+                            }
+                            .last_date{
+                                &:before{
+                                    content: "\f041";
+                                }
+                            }
+                            p{
+                                font-size: 14px;
+                                font-family: 'Octopus_300-Regular';
+                                color: #fff;
+                                line-height: 24px;
+                            }
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover .course_detail_hover_content{
+                right: 0;
+            }
+        }
+    }
+}
+/* End cours detail area 
+============================================================================================ */
+/* cours description area 
+============================================================================================ */
+.course_des_area{
+    background: #151525;
+    padding-bottom: 100px;
+    .cours_detail_des{
+        padding: 0px 30px;
+        h4{
+            color: #fff;
+            font-family: 'Octopus_300-Regular';
+            font-size: 16px;
+            text-transform: uppercase;
+            padding-bottom: 50px;
+        }
+        p{
+            padding-bottom: 70px;
+        }
+    }
+}
+/* End cours description area 
+============================================================================================ */

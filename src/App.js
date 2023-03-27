@@ -16,15 +16,9 @@ import {
 function App() {
   return (
     <Router>
-        <nav className='navbar fixed-top navbar-dark bg-primary navbar-expand-sm'>
-            <div className='container'>
-                <Link to='/' className='navbar-brand'>Squidex Blog Sample</Link>
+        <TopNav />    
 
-                <TopNav />
-            </div>
-        </nav>
-
-        <div className='container body-content'>
+        <div className='container'>
             <Switch>
                 <Route path='/' exact>
                     <PostsSite />

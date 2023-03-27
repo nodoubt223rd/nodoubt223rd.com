@@ -1,0 +1,98 @@
+/* about css
+============================================================================================ */
+.about_total_area{
+    background: #151525;
+    .about_img_description_area{
+        .about_box{
+            display: inline-block;
+            width: 1030px;
+            height: 455px;
+            overflow: hidden;
+            position: relative;
+            .about_image_main_box{
+                width: 1693px;
+                height: 1041px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                transform: rotate(45deg);        
+                margin-left: -44px;
+                overflow: hidden;
+                .about_image_box{
+                    transform: rotate(-45deg);
+                    margin-left: -195px;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 0 0;
+                border-color: transparent transparent rgba(255, 255, 255, 0.20) transparent;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+                @include transition;
+            }
+            &:hover{
+                &:after{
+                    border-width: 0 0 437px 437px;
+                }
+            }
+        }
+    }
+    .about_content_area{
+        padding: 0px 30px;
+        h4{
+            color: #fff;
+            font-family: 'Octopus_300-Regular';
+            font-size: 36px;
+            padding: 55px 0px 11px;
+        }
+        p{
+            color: #b7b7b7;
+            font-family: 'Octopus_300-Regular';
+            font-size: 14px;
+            line-height: 24px;
+            padding: 36px 0px;
+        }
+        .about_middle_content{
+            margin-left: 35px;
+            border-left: 2px solid #1fbad6;
+            color: #fff;
+            font-family: 'Octopus_300-Regular';
+            line-height: 24px;
+            padding: 25px 35px 25px;
+        }
+    }
+}
+
+.about_some_list{
+            padding-bottom: 50px;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                       color: #fff; 
+                       font-family: 'Octopus_300-Regular';
+                        font-size: 14px;
+                        line-height: 36px;
+                        text-decoration: none;
+                        i{
+                            color: #1fbad6;
+                            margin-right: 12px;
+                        }
+                        &:hover{
+                            color: #1fbad6;
+                        }
+                    }
+                }
+            }
+        }
+/* end about css
+============================================================================================ */

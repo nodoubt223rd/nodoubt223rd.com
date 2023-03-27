@@ -1,0 +1,1 @@
+!function(a){a(".header_main_slider_area").owlCarousel({items:1,margin:0,stagePadding:0,dots:!0,smartSpeed:450,mouseDrag:!1}),a(".feature_carusol").owlCarousel({items:3,margin:0,stagePadding:0,dots:!1,smartSpeed:450,nav:!0,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']})}(jQuery);
