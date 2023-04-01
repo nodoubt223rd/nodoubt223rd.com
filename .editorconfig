@@ -1,7 +1,9 @@
 ﻿[*.cs]
 
-# Default severity for analyzer diagnostics with category 'StyleCop.CSharp.ReadabilityRules'
-dotnet_analyzer_diagnostic.category-StyleCop.CSharp.ReadabilityRules.severity = none
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = silent
+csharp_indent_labels = one_less_than_current
+csharp_space_around_binary_operators = before_and_after
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_simple_using_statement = true:suggestion
 csharp_prefer_braces = true:silent
@@ -16,8 +18,20 @@ csharp_style_expression_bodied_indexers = true:silent
 csharp_style_expression_bodied_accessors = true:silent
 csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
-csharp_indent_labels = one_less_than_current
 
+[*.{cs,vb}]
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
+end_of_line = crlf
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 [*.{cs,vb}]
 #### Naming styles ####
 
@@ -65,21 +79,3 @@ dotnet_naming_style.pascal_case.required_prefix =
 dotnet_naming_style.pascal_case.required_suffix = 
 dotnet_naming_style.pascal_case.word_separator = 
 dotnet_naming_style.pascal_case.capitalization = pascal_case
-dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
-dotnet_style_prefer_auto_properties = true:silent
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
-dotnet_style_operator_placement_when_wrapping = beginning_of_line
-tab_width = 4
-indent_size = 4
-end_of_line = crlf
-dotnet_style_prefer_conditional_expression_over_assignment = true:silent
-
-# Default severity for analyzer diagnostics with category 'StyleCop.CSharp.DocumentationRules'
-dotnet_analyzer_diagnostic.category-StyleCop.CSharp.DocumentationRules.severity = silent
-
-# Default severity for all analyzer diagnostics
-dotnet_analyzer_diagnostic.severity = silent

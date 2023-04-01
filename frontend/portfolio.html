@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Blogen - Blog & Portfolio HTML Template</title>
+	    <meta name="description" content="Blog & Portfolio HTML Template" />
+	    <meta name="keywords" content="Blog, Portfolio, Bootstrap, Responsive, Creative, Travels, Photography, Personal, Modern" />
+	    <meta name="author" content="XPanthersolutions" />
+
+	    <link rel="shortcut icon" href="images/favicon.ico">
+
+	    <!-- Load CSS -->
+	    <!-- Bootstrap core CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	    <!-- Animation CSS -->
+	    <link rel="stylesheet" href="css/animate.css" type="text/css">
+	    <!-- Material Icon -->
+	    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css"/>
+	    <!-- Owl Slider -->
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+	    <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+    <body>			
+		
+		<!-- Start Sidebar Menu --> 
+		<div id="menu-content" class="menu-overlay">
+		  <a href="javascript:void(0)" id="menu-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		  <div class="menu-overlay-content">
+		  	<div class="container">
+				<div id="fullwidthmenu">
+	                <div class="menu-main-menu-container">
+	                	<ul id="menu-main-menu" class="menu">
+	                		<li class="menu-item"><a href="index.html">Home</a></li>
+	                		<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item current-menu-item menu-item-has-children"><a href="blog.html">Blog</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="blog.html">Right Sidebar</a></li>
+									<li class="menu-item"><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+									<li class="menu-item"><a href="blog-fullwidth.html">Full Width</a></li>
+								</ul>
+							</li>							
+							<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>                    
+				</div>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Start Sidebar Search --> 
+		<div id="search-content" class="search-overlay">
+		  <a href="javascript:void(0)" id="search-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		  <div class="search-overlay-content">
+		  	<div class="container">
+				<form method="get" id="headsearchform" class="headsearchform" action="#">
+					<div class="input-group">
+					  <input type="text" class="form-control" value="" name="headerSearch" id="headerSearch" placeholder="Type and hit enter....." aria-label="Type and hit enter">
+					  <div class="input-group-append">
+					   <button class="search-btn" type="submit" form="headsearchform"><i class="mdi mdi-magnify"></i></button>
+					  </div>
+					</div>
+				</form>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Start Header -->
+		<header class="header">			
+				<div class="topbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="topbar-left">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item"><a href="mailto:xpanthersolutions@gmail.com" class="contact-list-item text-dim"><i class="mdi mdi-email"></i>xpanthersolutions@gmail.com</a></li>										
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="topbar-right">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item"><a href="tel:+19876543210" class="contact-list-item text-dim"><i class="mdi mdi-phone"></i>+1 9876543210</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headerbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-md-3">
+								<div class="menubar">
+									<a id="menu-open-btn" class="btn-header">
+										<i class="mdi mdi-menu"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="logobar text-center">
+									<a href="index.html"><img src="images/logo_small.png" class="img img-responsive" alt="logo"/></a>
+								</div>
+							</div>
+							<div class="col-3 col-md-3">
+								<div class="searchbar text-right">
+									<a id="search-open-btn" class="btn-header">
+										<i class="mdi mdi-magnify"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		<!-- End Header -->
+		
+		<!-- Start breadcrumb -->
+		<div class="breadcrumb-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="index.html" class="text-dim">Home</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+						  </ol>
+						</nav>
+					</div>
+				</div>
+			</div>			
+		</div>
+        <!-- End Breadcrumb -->
+
+        <!-- Start Portfolio -->
+		<section class="content-section">
+			<div class="container">
+				<div class="page-main">
+					<div class="portfolio-filter-box">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="port-filter">  
+								<ul class="list-inline mb-0">
+								  <li class="list-inline-item"><a class="filter-item current" data-filter="*">All</a></li>
+								  <li class="list-inline-item"><a class="filter-item" data-filter=".icons">Icons</a></li>
+								  <li class="list-inline-item"><a class="filter-item" data-filter=".posters">Posters</a></li>
+								  <li class="list-inline-item"><a class="filter-item" data-filter=".graphics">Graphics</a></li>
+								  <li class="list-inline-item"><a class="filter-item" data-filter=".vectors">Vectors</a></li>
+								</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-item-box">
+						<div class="grid row">
+							  <div class="grid-item col-sm-6 col-md-4 icons">
+							  	<figure class="grid-effect border-gradient-info">
+									<img src="images/portfolio_01.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Discover new path</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 posters">							  
+							  	<figure class="grid-effect border-gradient-pri">
+									<img src="images/portfolio_02.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Paint it like Rainbow.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>				
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 graphics">
+							  	<figure class="grid-effect border-gradient-def">
+									<img src="images/portfolio_03.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Hunt for Food</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>				
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 vectors">
+							  	<figure class="grid-effect border-gradient-reg">
+									<img src="images/portfolio_04.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Ups and Down of life</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 icons posters">
+							  	<figure class="grid-effect border-gradient-info">
+									<img src="images/portfolio_05.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Play Hard. Work Hard.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 graphics vectors">
+							  	<figure class="grid-effect border-gradient-pri">
+									<img src="images/portfolio_06.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Time is never right.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 icons graphics">
+							  	<figure class="grid-effect border-gradient-def">
+									<img src="images/portfolio_07.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Happiness is Butterfly.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>		
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 posters vectors">
+							  	<figure class="grid-effect border-gradient-reg">
+									<img src="images/portfolio_08.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Sweet Adventure.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 icons vectors">
+							  	<figure class="grid-effect border-gradient-info">
+									<img src="images/portfolio_09.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Scoope it Now.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 graphics posters">
+							  	<figure class="grid-effect border-gradient-pri">
+									<img src="images/portfolio_10.jpg" alt="img23"/>
+									<figcaption>
+										<h5>See Bright Future.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>								
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 icons vectors graphics posters">
+							  	<figure class="grid-effect border-gradient-info">
+									<img src="images/portfolio_11.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Make your own Time.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>
+							  </div>
+							  <div class="grid-item col-sm-6 col-md-4 icons vectors graphics posters">
+							  	<figure class="grid-effect border-gradient-pri">
+									<img src="images/portfolio_12.jpg" alt="img23"/>
+									<figcaption>
+										<h5>Be Flexible.</h5>
+										<a href="portfolio-detail.html">View more</a>
+									</figcaption>			
+								</figure>								
+							  </div>
+						</div>
+					</div>
+
+				</div>	
+			</div>
+		</section>
+        <!-- End Portfolio -->
+
+        <!-- Start Footer -->
+        <footer class="footer section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    	<div class="footer-logo">
+                           <img src="images/logo_small.png" class="img img-responsive" alt="logo"/>
+                        </div>
+                        <div class="footer-social">
+                            <ul class="list-inline social mb-0">
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-facebook"></i> Facebook</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-twitter"></i> Twitter</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-instagram"></i> Instagram</a></li>                                
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-google-plus"></i> Google +</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-linkedin"></i> LinkedIn</a></li>
+                            </ul>
+                        </div>                        
+                        <div class="footer-copyright">
+                            <p class="copy-rights mb-0">© 2019 Blogen. All Right Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Start Back to top -->    
+        <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
+		<!-- End Back to top -->
+           
+        <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Isotop JS -->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>      
+
+    </body>
+</html>
