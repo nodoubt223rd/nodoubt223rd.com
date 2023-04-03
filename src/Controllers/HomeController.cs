@@ -9,17 +9,17 @@ namespace Sample.Blog.Controllers
     public sealed class HomeController : Controller
     {
         private const int PageSize = 3;
-        private readonly IContentService apiClient;
+        private readonly IContentService _contentService;
 
-        public HomeController(IContentService apiClient)
+        public HomeController(IContentService contentService)
         {
-            this.apiClient = apiClient;
+            _contentService = contentService;
         }
 
         [Route("/")]
         public async Task<IActionResult> Posts(int page = 0)
         {
-            var (total, posts) = await apiClient.GetBlogPostsAsync(page, PageSize);
+            var (total, posts) = await _contentService.GetBlogPostsAsync(page, PageSize);
 
             var vm = new PostsVM
             {
@@ -35,7 +35,7 @@ namespace Sample.Blog.Controllers
         [Route("/{slug},{id}/")]
         public async Task<IActionResult> Post(string slug, string id)
         {
-            var post = await apiClient.GetBlogPostAsync(id);
+            var post = await _contentService.GetBlogPostAsync(id);
 
             var vm = new PostVM
             {
@@ -48,7 +48,7 @@ namespace Sample.Blog.Controllers
         [Route("/{slug}/")]
         public async Task<IActionResult> Page(string slug)
         {
-            var page = await apiClient.GetPageAsync(slug);
+            var page = await _contentService.GetPageAsync(slug);
 
             var vm = new PageVM
             {
@@ -62,5 +62,11 @@ namespace Sample.Blog.Controllers
         {
             return View(new ErrorVM { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult SideBar()
+        {
+            return PartialView();
+        }
+
     }
 }

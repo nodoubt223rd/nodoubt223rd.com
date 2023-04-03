@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
+using Nodoubt.Blog.Project.Common;
 using Nodoubt.Blog.Project.Interfaces;
 using Nodoubt.Blog.Project.Models;
 using Squidex.ClientLibrary;
@@ -41,6 +42,13 @@ namespace Nodoubt.Blog.Project.Services
             var query = new ContentQuery { Skip = page * pageSize, Top = pageSize };
 
             var posts = await postsClient.GetAsync(query);
+
+            for (int i = 0; i < posts.Items.Count; i++)
+            {
+                var imageId = posts.Items[i].Data.PostImage[i];
+
+                posts.Items[i].Data.FinalImage = $"{Constants.BaseUrl.Url}{imageId}";
+            }
 
             return (posts.Total, posts.Items);
         }
