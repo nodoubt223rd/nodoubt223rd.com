@@ -8,6 +8,7 @@ using Nodoubt.Blog.Project.Interfaces;
 using Nodoubt.Blog.Project.Models;
 using Squidex.ClientLibrary;
 using Squidex.ClientLibrary.Configuration;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Nodoubt.Blog.Project.Services
 {
@@ -72,9 +73,13 @@ namespace Nodoubt.Blog.Project.Services
             return pages.Items.FirstOrDefault();
         }
 
-        public Task<BlogPost> GetBlogPostAsync(string id)
+        public async Task<BlogPost> GetBlogPostAsync(string id)
         {
-            return postsClient.GetAsync(id);
+            var post = await  postsClient.GetAsync(id);
+
+            post.Data.FinalImage = $"{Constants.BaseUrl.Url}{post.Data.PostImage}";
+
+			return post;
         }
     }
 }
