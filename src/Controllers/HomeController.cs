@@ -67,6 +67,5 @@ namespace Sample.Blog.Controllers
         {
             return PartialView();
         }
-
     }
 }
