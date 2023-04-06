@@ -20,10 +20,7 @@
 								<div class="col-sm-7">
 									<div class="blog-content-cate">
 										<ul class="list-inline">
-											@foreach (var tag in post.Data.PostTags)
-											{
-												<li class="list-inline-item"><a href="#" class="btn-gradient-cate-reg">@tag</a></li>
-											}
+											<li class="list-inline-item"><a href="#" class="btn-gradient-cate-reg">@post.Data.Category</a></li>
 										</ul>
 									</div>
 								</div>

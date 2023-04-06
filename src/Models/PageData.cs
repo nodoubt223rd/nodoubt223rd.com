@@ -13,5 +13,8 @@ namespace Nodoubt.Blog.Project.Models
 
         [JsonConverter(typeof(InvariantConverter))]
         public string Text { get; set; }
-    }
+
+		[JsonConverter(typeof(InvariantConverter))]
+		public string PageLabel { get; set; }
+	}
 }

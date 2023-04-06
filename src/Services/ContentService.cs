@@ -77,7 +77,7 @@ namespace Nodoubt.Blog.Project.Services
         {
             var post = await  postsClient.GetAsync(id);
 
-            post.Data.FinalImage = $"{Constants.BaseUrl.Url}{post.Data.PostImage}";
+            post.Data.FinalImage = $"{Constants.BaseUrl.Url}{post.Data.PostImage[0]}";
 
 			return post;
         }

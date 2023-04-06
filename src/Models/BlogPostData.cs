@@ -9,6 +9,10 @@ namespace Nodoubt.Blog.Project.Models
     {
 		[JsonConverter(typeof(InvariantConverter))]
 		public string Author { get; set; }
+
+		[JsonConverter(typeof(InvariantConverter))]
+		public string Category { get; set; }
+
 		[JsonConverter(typeof(InvariantConverter))]
         public string Title { get; set; }
 
