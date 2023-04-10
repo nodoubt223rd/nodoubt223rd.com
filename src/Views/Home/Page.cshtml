@@ -1,0 +1,69 @@
+﻿@model PageVM
+
+@{
+    ViewData["Title"] = Model.Page.Data.Title;
+}
+
+<div class="row">
+    <div class="page-main">
+		<div class="blog-details-box border-gradient-info mb-30">
+			<div class="blog-head">
+				<img src="images/blog_01.jpg" alt="blog-featured-img">
+			</div>
+			<div class="blog-content">
+				<div class="blog-content-head">
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="blog-content-cate">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="#" class="btn-gradient-cate-info">@Model.Page.Data.PageLabel</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="blog-content-date">
+								<p>15 May, 2018 at 3:56pm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog-content-body">
+					<h2 class="blog-title mb-20">@Model.Page.Data.Title</h2>
+					@Html.Raw(Model.Page.Data.Text)
+				</div>
+				<div class="blog-content-footer">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="blog-content-tags">
+								<p class="text-dim"></p>
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<div class="blog-content-social">
+								<ul class="list-inline social mb-0">
+									<li class="list-inline-item"><a href="https://www.facebook.com/Nodoubt223rd" class="social-icon text-dim"><i class="mdi mdi-facebook"></i></a></li>
+									<li class="list-inline-item"><a href="https://twitter.com/nodoubt223rd" class="social-icon text-dim"><i class="mdi mdi-twitter"></i></a></li>
+									<li class="list-inline-item"><a href="https://www.instagram.com/nodoubt223rd/" class="social-icon text-dim"><i class="mdi mdi-instagram"></i></a></li>									
+									<li class="list-inline-item"><a href="https://www.linkedin.com/in/brett-murphy-2297a018/" class="social-icon text-dim"><i class="mdi mdi-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog-footer">
+				<div class="row">
+					<div class="col-sm-4">
+						<p class="mb-0 blog-author"><span class="text-dim"><i class="mdi mdi-account"></i> Nodoubt223rd </p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<!-- Side Bar -->
+	@{
+		Html.RenderPartial("SideBar");
+	}
+</div>
+
+    

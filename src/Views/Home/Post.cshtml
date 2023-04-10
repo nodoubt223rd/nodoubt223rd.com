@@ -1,0 +1,76 @@
+﻿@using System.Globalization;
+@model PostVM
+
+@{
+    ViewData["Title"] = Model.Post.Data.Title;
+}
+
+<div class="row">
+	<div class="col-lg-8">
+		<div class="page-main">
+			<div class="blog-list-box border-gradient-reg mb-30">
+				<div class="blog-head">
+					<img src="@Model.Post.Data.FinalImage" alt="blog-featured-image">
+				</div>
+				<div class="blog-content">
+					<div class="blog-content-head">
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="blog-content-cate">
+									<ul class="list-inline">
+										<li class="list-inline-item"><a herf="#" class="btn-gradient-cate-reg">@Model.Post.Data.Category</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-5">
+								<div class="blog-content-date">
+									<p>@CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(Model.Post.LastModified.Month) @Model.Post.Created.Day, @Model.Post.Created.Year at @Model.Post.LastModified.ToString("H:mm tt")</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-content-body">
+						<h2 class="blog-title mb-20"><a asp-action="Post" asp-route-slug="@Model.Post.Data.Slug" asp-route-id="@Model.Post.Id">@Model.Post.Data.Title</a></h2>
+						<p class="blog-desc mb-30">@Html.Raw(@Model.Post.Data.Text)</p>
+					</div>
+					<div class="blog-content-footer">
+						<div class="row">
+							<div class="col-sm-5">
+								<div class="blog-content-tags">
+									<p class="text-dim">Tags: </p>
+									<ul class="list-inline tags mb-0 mt-15">
+									@foreach (var tag in @Model.Post.Data.PostTags)
+									{
+										<li class="list-inline-item"><a href="#">@tag</a></li>
+									}
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-7">
+								<div class="blog-content-social">
+									<ul class="list-inline social mb-0">
+										<li class="list-inline-item"><a href="https://www.facebook.com/Nodoubt223rd" class="social-icon text-dim"><i class="mdi mdi-facebook"></i></a></li>
+										<li class="list-inline-item"><a href="https://twitter.com/nodoubt223rd" class="social-icon text-dim"><i class="mdi mdi-twitter"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.instagram.com/nodoubt223rd/" class="social-icon text-dim"><i class="mdi mdi-instagram"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/brett-murphy-2297a018/" class="social-icon text-dim"><i class="mdi mdi-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog-footer">
+					<div class="row">
+						<div class="col-sm-4">
+							<p class="mb-0 blog-author"><span class="text-dim"><i class="mdi mdi-account"></i> Author : </span>@Model.Post.Data.Author</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Side Bar -->
+	@{
+		Html.RenderPartial("SideBar");
+	}
+</div>

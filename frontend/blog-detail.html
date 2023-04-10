@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Blogen - Blog & Portfolio HTML Template</title>
+	    <meta name="description" content="Blog & Portfolio HTML Template" />
+	    <meta name="keywords" content="Blog, Portfolio, Bootstrap, Responsive, Creative, Travels, Photography, Personal, Modern" />
+	    <meta name="author" content="XPanthersolutions" />
+
+	    <link rel="shortcut icon" href="images/favicon.ico">
+
+	    <!-- Load CSS -->
+	    <!-- Bootstrap core CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	    <!-- Animation CSS -->
+	    <link rel="stylesheet" href="css/animate.css" type="text/css">
+	    <!-- Material Icon -->
+	    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css"/>
+	    <!-- Owl Slider -->
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+	    <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+    <body>			
+		
+		<!-- Start Sidebar Menu --> 
+		<div id="menu-content" class="menu-overlay">
+		  <a href="javascript:void(0)" id="menu-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		  <div class="menu-overlay-content">
+		  	<div class="container">
+				<div id="fullwidthmenu">
+	                <div class="menu-main-menu-container">
+	                	<ul id="menu-main-menu" class="menu">
+	                		<li class="menu-item"><a href="index.html">Home</a></li>
+	                		<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item current-menu-item menu-item-has-children"><a href="blog.html">Blog</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="blog.html">Right Sidebar</a></li>
+									<li class="menu-item"><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+									<li class="menu-item"><a href="blog-fullwidth.html">Full Width</a></li>
+								</ul>
+							</li>							
+							<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>                    
+				</div>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Start Sidebar Search --> 
+		<div id="search-content" class="search-overlay">
+		  <a href="javascript:void(0)" id="search-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		  <div class="search-overlay-content">
+		  	<div class="container">
+				<form method="get" id="headsearchform" class="headsearchform" action="#">
+					<div class="input-group">
+					  <input type="text" class="form-control" value="" name="headerSearch" id="headerSearch" placeholder="Type and hit enter....." aria-label="Type and hit enter">
+					  <div class="input-group-append">
+					   <button class="search-btn" type="submit" form="headsearchform"><i class="mdi mdi-magnify"></i></button>
+					  </div>
+					</div>
+				</form>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Start Header -->
+		<header class="header">			
+				<div class="topbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="topbar-left">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item"><a href="mailto:xpanthersolutions@gmail.com" class="contact-list-item text-dim"><i class="mdi mdi-email"></i>xpanthersolutions@gmail.com</a></li>										
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="topbar-right">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item"><a href="tel:+19876543210" class="contact-list-item text-dim"><i class="mdi mdi-phone"></i>+1 9876543210</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headerbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-md-3">
+								<div class="menubar">
+									<a id="menu-open-btn" class="btn-header">
+										<i class="mdi mdi-menu"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="logobar text-center">
+									<a href="index.html"><img src="images/logo_small.png" class="img img-responsive" alt="logo"/></a>
+								</div>
+							</div>
+							<div class="col-3 col-md-3">
+								<div class="searchbar text-right">
+									<a id="search-open-btn" class="btn-header">
+										<i class="mdi mdi-magnify"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		<!-- End Header -->
+		
+		<!-- Start breadcrumb -->
+		<div class="breadcrumb-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="index.html" class="text-dim">Home</a></li>
+						    <li class="breadcrumb-item"><a href="blog.html" class="text-dim">Blog</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Reading is fabulous. Keep it ON</li>
+						  </ol>
+						</nav>
+					</div>
+				</div>
+			</div>			
+		</div>
+        <!-- End Breadcrumb -->
+
+        <!-- Start Blog List -->
+		<section class="content-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="page-main">
+							<div class="blog-details-box border-gradient-info mb-30">
+								<div class="blog-head">
+									<img src="images/blog_01.jpg" alt="blog-featured-img">
+								</div>
+								<div class="blog-content">
+									<div class="blog-content-head">
+										<div class="row">
+											<div class="col-sm-7">
+												<div class="blog-content-cate">
+													<ul class="list-inline">
+														<li class="list-inline-item"><a href="#" class="btn-gradient-cate-info">PHOTOGRAPHY</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-5">
+												<div class="blog-content-date">
+													<p>15 May, 2018 at 3:56pm</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-content-body">
+										<h2 class="blog-title mb-20">Reading is fabulous. Keep it ON</h2>
+										<p>Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<blockquote class="blockquote">
+										  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa.</p>
+										  <footer class="blockquote-footer mt-2">Someone famous in <cite title="Source Title">Source Title</cite></footer>	
+										</blockquote>										
+										<ul>
+											<li>There are many variations of passages of Lorem Ipsum</li>
+											<li>Many desktop publishing packages and web page</li>
+											<li>Various versions have evolved over the years</li>
+											<li>Contrary to popular belief, Lorem Ipsum is not simply</li>
+											<li>It is a long established fact that a reader</li>
+										</ul>
+										<ol>
+											<li>If you are going to use a passage of Lorem Ipsum</li>
+											<li>All the Lorem Ipsum generators on the Internet</li>
+											<li>The generated Lorem Ipsum is therefore always</li>
+											<li>The majority have suffered alteration in some form</li>
+											<li>It uses a dictionary of over 200 Latin words</li>
+										</ol>
+										<h1>HEADING H1</h1>
+										<h2>HEADING H2</h2>
+										<h3>HEADING H3</h3>
+										<h4>HEADING H4</h4>
+										<h5>HEADING H5</h5>
+										<h6>HEADING H6</h6>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>										
+									</div>
+									<div class="blog-content-footer">
+										<div class="row">
+											<div class="col-sm-5">
+												<div class="blog-content-tags">
+													<p class="text-dim">Tags : </p>
+													<ul class="list-inline tags mb-0 mt-15">
+						                                <li class="list-inline-item"><a href="#">Business</a></li>
+						                                <li class="list-inline-item"><a href="#">News</a></li>
+						                                <li class="list-inline-item"><a href="#">Agency</a></li>  
+		                            				</ul>
+												</div>
+											</div>
+											<div class="col-sm-7">
+												<div class="blog-content-social">
+													<ul class="list-inline social mb-0">
+						                                <li class="list-inline-item"><a href="#" class="social-icon text-dim"><i class="mdi mdi-facebook"></i></a></li>
+						                                <li class="list-inline-item"><a href="#" class="social-icon text-dim"><i class="mdi mdi-twitter"></i></a></li>
+						                                <li class="list-inline-item"><a href="#" class="social-icon text-dim"><i class="mdi mdi-instagram"></i></a></li>
+						                                <li class="list-inline-item"><a href="#" class="social-icon text-dim"><i class="mdi mdi-google-plus"></i></a></li>
+						                                <li class="list-inline-item"><a href="#" class="social-icon text-dim"><i class="mdi mdi-linkedin"></i></a></li>
+						                            </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="blog-footer">
+									<div class="row">
+										<div class="col-sm-4">
+											<p class="mb-0 blog-author"><span class="text-dim"><i class="mdi mdi-account"></i> Author : </span>John</p>
+										</div>
+										<div class="col-sm-4">
+											<p class="mb-0 blog-views"><span class="text-dim"><i class="mdi mdi-eye"></i> Views : </span>1035</p>
+										</div>
+										<div class="col-sm-4">
+											<p class="mb-0 blog-comment"><span class="text-dim"><i class="mdi mdi-comment-processing"></i> Comments : </span>27</p>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="post-next-previous">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="post-previous mb-30">
+											<div class="row">
+												<div class="col-2">
+													<a href="#" class="text-center"><i class="mdi mdi-arrow-left"></i></a>
+												</div>
+												<div class="col-10">
+													<h6>Explore within. Enjoy cool breeze with calm mind and atmosphere.</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="post-next mb-30">
+											<div class="row">
+												<div class="col-10"><h6 class="text-right">Experience joy of shopping that gets better with your age !!!.</h6></div>
+												<div class="col-2">
+													<a href="#" class="text-center"><i class="mdi mdi-arrow-right"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="comment-box border-gradient-info mb-30">
+								<div class="comment-title">
+									<h4>3 Comment</h4>
+								</div>
+								<div class="comment-list">
+									<ol class="media-list list-unstyled">
+										<li class="comment even depth-1" id="comment-1">
+											<div  id="div-comment-1" class="comment-wrap">
+												<div class="media">
+													<img alt="" src="images/user_01.png" class="mr-3" height="52" width="52">
+													<div class="media-body">
+														<h4 class="media-heading"><a href="#" rel="external nofollow" class="url">John Doe</a></h4>
+														<p class="post-date">June 3, 2018 at 10:46 am</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+														<a rel="nofollow" class="comment-reply-link text-dim" href="#"><i class="mdi mdi-reply mr5"></i> Reply</a>
+													</div>			
+												</div>
+												<ul class="children">
+													<li class="comment odd depth-2" id="comment-2">
+														<div  id="div-comment-2" class="comment-wrap">
+															<div class="media">
+																<img alt="" src="images/user_02.png" class="mr-3" height="52" width="52">
+																<div class="media-body">			
+																	<h4 class="media-heading"><a href="#" rel="external nofollow" class="url">John Doe</a></h4>			
+																	<p class="post-date">June 4, 2018 at 10:47 am</p>
+																	<p>Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis.</p>
+																	<a rel="nofollow" class="comment-reply-link text-dim" href="#" ><i class="mdi mdi-reply mr5"></i> Reply</a>
+																</div>
+															</div>
+														</div>
+														<ul class="children">
+															<li class="comment even depth-3" id="comment-3">
+																<div id="div-comment-3" class="comment-wrap">
+																	<div class="media">
+																		<img alt="" src="images/user_01.png" class="mr-3" height="52" width="52">
+																		<div class="media-body">			
+																			<h4 class="media-heading"><a href="#" rel="external nofollow" class="url">John Doe</a></h4>			
+																			<p class="post-date">June 5, 2018 at 10:48 am</p>
+																			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+																			<a rel="nofollow" class="comment-reply-link text-dim" href="#" ><i class="mdi mdi-reply mr5"></i> Reply</a>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="comment odd depth-1" id="comment-4">
+											<div id="div-comment-4" class="comment-wrap">
+												<div class="media">
+													<img alt="" src="images/user_03.png" class="mr-3" height="52" width="52">
+													<div class="media-body">			
+														<h4 class="media-heading"><a href="#" rel="external nofollow" class="url">John Doe</a></h4>
+														<p class="post-date">June 3, 2018 at 10:47 am</p>
+														<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+														<a rel="nofollow" class="comment-reply-link text-dim" href="#"><i class="mdi mdi-reply mr5"></i> Reply</a>			
+													</div>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+
+								<div id="respond" class="comment-respond">
+									<h3 id="reply-title" class="comment-reply-title"><span>Leave A Comment</span></h3>			
+									<form action="#" method="post" id="commentform" class="mt-4">
+										<div class="comment-form-comment form-group"><textarea id="comment" name="comment" cols="45" rows="5" class="form-control" aria-required="true" placeholder="Enter Your Comment..."></textarea></div>
+										<div class="comment-form-author form-group">
+						                    <input id="author" name="author" type="text" class="form-control" value="" size="30" aria-required="true" placeholder="Enter Your Username...">
+						                </div>
+										<div class="comment-form-email form-group">
+						                    <input id="email" name="email" type="text" class="form-control" value="" size="30" aria-required="true" placeholder="Enter Your Email...">
+						                </div>
+										<div class="comment-form-url form-group">
+											<input id="url" class="form-control" name="url" type="text" value="" size="30" placeholder="Enter Your Website...">
+										</div>
+										<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+										<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="56" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+										</p>
+									</form>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-lg-4">
+						<div class="page-sidebar">
+							<div class="widget widget-search border-gradient-def mb-30">
+								<div class="widget-title">
+									<h4>Search</h4>
+								</div>
+								<div class="widget-content">
+									<form method="get" id="widgetsearchform" class="widgetsearchform" action="#">
+										<div class="input-group">
+										  <input type="text" class="form-control" value="" name="widgetSearch" id="widgetSearch" placeholder="Type Here..." aria-label="Type here">
+										  <div class="input-group-append">
+										   <button class="search-btn" type="submit" form="widgetsearchform"><i class="mdi mdi-magnify"></i></button>
+										  </div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="widget widget-about border-gradient-info mb-30">
+								<div class="widget-title">
+									<h4>About Me</h4>
+								</div>
+								<div class="widget-content text-center">
+									<img src="images/mia.png" alt="about" />
+									<div class="about-content">
+										<a href="about.html" class="btn about-name btn-gradient-cate-info">MIA PARKER</a>
+										<p class="mb-0">Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a.</p>	
+									</div>
+								</div>
+							</div>
+							<div class="widget widget-follows border-gradient-pri mb-30">
+								<div class="widget-title">
+									<h4>Follow Us</h4>
+								</div>
+								<div class="widget-content">
+									<ul class="list-inline social mt-20 mb-0">
+		                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-facebook"></i></a></li>
+		                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-twitter"></i></a></li>
+		                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-instagram"></i></a></li>            
+		                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-google-plus"></i></a></li>
+		                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-linkedin"></i></a></li>
+		                            </ul>
+								</div>
+							</div>
+							<div class="widget widget-contact border-gradient-reg mb-30">
+								<div class="widget-title">
+									<h4>Contact Us</h4>
+								</div>
+								<div class="widget-content">
+									<ul class="list-group list-group-flush">
+									  <li class="list-group-item"><i class="mdi mdi-map"></i> 123 Main Street</li>
+									  <li class="list-group-item"><i class="mdi mdi-phone"></i> +1 9876543210</li>
+									  <li class="list-group-item"><i class="mdi mdi-email"></i> info@mail.com</li>
+									  <li class="list-group-item"><i class="mdi mdi-web"></i> www.blogen.com</li>
+									</ul>
+								</div>
+							</div>
+							<div class="widget widget-popular-post border-gradient-def mb-30">
+								<div class="widget-title">
+									<h4>Popular Post</h4>
+								</div>
+								<div class="widget-content">
+									<div class="polupar-post-item mb-30">
+										<img src="images/popular_01.jpg" class="mb-20" alt="popular-post" />
+										<h6><a href="blog-detail.html">Your Heart is just a Beatbox for Song of your Life.</a></h6>
+										<p class="mb-0">15 May, 2018 at 3:56pm</p>
+									</div>
+									<div class="polupar-post-item">
+										<img src="images/popular_02.jpg" class="mb-20" alt="popular-post" />
+										<h6><a href="blog-detail.html">Travel brings Power and Love back to your life.</a></h6>
+										<p class="mb-0">30 May, 2018 at 5:56pm</p>
+									</div>
+								</div>
+							</div>
+							<div class="widget widget-category border-gradient-info mb-30">
+								<div class="widget-title">
+									<h4>Categories</h4>
+								</div>
+								<div class="widget-content">
+									<ul class="list-group">
+									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									    <a href="#">Lifestyle</a>
+									    <span class="badge badge-primary badge-pill">5</span>
+									  </li>
+									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									    <a href="#">Travelling</a>
+									    <span class="badge badge-primary badge-pill">10</span>
+									  </li>
+									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									    <a href="#">Music</a>
+									    <span class="badge badge-primary badge-pill">15</span>
+									  </li>
+									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									    <a href="#">Fashion</a>
+									    <span class="badge badge-primary badge-pill">23</span>
+									  </li>
+									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									    <a href="#">Photography</a>
+									    <span class="badge badge-primary badge-pill">55</span>
+									  </li>
+									</ul>
+								</div>
+							</div>
+							<div class="widget widget-tags border-gradient-pri mb-30">
+								<div class="widget-title">
+									<h4>Tags</h4>
+								</div>
+								<div class="widget-content">
+									<ul class="list-inline tags mb-0 mt-15">
+		                                <li class="list-inline-item"><a href="#">Business</a></li>
+		                                <li class="list-inline-item"><a href="#">News</a></li>
+		                                <li class="list-inline-item"><a href="#">Agency</a></li>
+		                                <li class="list-inline-item"><a href="#">Corporate</a></li>
+		                                <li class="list-inline-item"><a href="#">E-Commerce</a></li>   
+		                            </ul>
+								</div>
+							</div>
+							<div class="widget widget-instagram border-gradient-reg mb-30">
+								<div class="widget-title">
+									<h4>Instagram Feed</h4>
+								</div>
+								<div class="widget-content">
+									<div class="instagram-img">
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_01.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_02.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_03.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_04.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_05.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                                <div class="instagram-feed"><a href="#"><img src="images/instagram_06.jpg" class="img-fluid" alt="instagram"></a>
+		                                </div>
+		                            </div>
+								</div>
+							</div>
+							<div class="widget widget-newsletter border-gradient-info mb-30">
+								<div class="widget-title">
+									<h4>Newsletter</h4>
+								</div>
+								<div class="widget-content">
+									<form method="get" id="newsform" class="newsform" action="#">
+									  <div class="form-group">
+									    <input type="email" class="form-control" id="subscribeEmail" placeholder="Enter Email ID...">
+									  </div>
+									  <button type="submit" class="btn btn-block" form="newsform">Subscribe</button>
+									</form>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</section>
+        <!-- End Blog List -->
+
+        <!-- Start Footer -->
+        <footer class="footer section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    	<div class="footer-logo">
+                           <img src="images/logo_small.png" class="img img-responsive" alt="logo"/>
+                        </div>
+                        <div class="footer-social">
+                            <ul class="list-inline social mb-0">
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-facebook"></i> Facebook</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-twitter"></i> Twitter</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-instagram"></i> Instagram</a></li>                                
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-google-plus"></i> Google +</a></li>
+                                <li class="list-inline-item"><a href="#" class="social-icon"><i class="mdi mdi-linkedin"></i> LinkedIn</a></li>
+                            </ul>
+                        </div>                        
+                        <div class="footer-copyright">
+                            <p class="copy-rights mb-0">© 2019 Blogen. All Right Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Start Back to top -->    
+        <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
+		<!-- End Back to top -->
+           
+        <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Isotop JS -->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>   
+                       
+    </body>
+</html>

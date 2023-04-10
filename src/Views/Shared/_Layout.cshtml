@@ -1,0 +1,172 @@
+﻿@inject IContentService ApiClient
+
+@{
+	var pages = await ApiClient.GetPagesAsync();
+	var pageTitle = @ViewData["Title"];
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nodoubt 223rd</title>
+    <meta name="description" content="A place to blog my crazy adventures in Sitecore and development." />
+    <meta name="keywords" content="Blog, Bootstrap, Responsive, Personal, Sitecore, Development, ASP.NET, .NET Core, C#, C Sharp" />
+    <meta name="author" content="Brett G. Murphy" />
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+
+    <!-- Load CSS -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="~/css/animate.css" type="text/css">
+	<!-- Material Icon -->
+    <link rel="stylesheet" type="text/css" href="~/css/materialdesignicons.min.css" />
+	<!-- Owl Slider -->
+	<link rel="stylesheet" type="text/css" href="~/css/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="~/css/owl.theme.default.min.css" />
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+</head>
+<body>
+	<!-- Start Sidebar Menu -->
+	<div id="menu-content" class="menu-overlay">
+		<a href="javascript:void(0)" id="menu-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		<div class="menu-overlay-content">
+			<div class="container">
+				<div id="fullwidthmenu">
+					<div class="menu-main-menu-container">
+						<ul id="menu-main-menu" class="menu">
+							@foreach (var pageItem in pages)
+							{
+								<li class="menu-item">
+									<a asp-controller="Home" asp-action="Page" asp-route-slug="@pageItem.Data.Slug" class="nav-link">@pageItem.Data.Title</a>
+								</li>
+							}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Sidebar Search -->
+	<div id="search-content" class="search-overlay">
+		<a href="javascript:void(0)" id="search-close-btn" class="close-btn"><i class="mdi mdi-close"></i></a>
+		<div class="search-overlay-content">
+			<div class="container">
+				<form method="get" id="headsearchform" class="headsearchform" action="#">
+					<div class="input-group">
+						<input type="text" class="form-control" value="" name="headerSearch" id="headerSearch" placeholder="Type and hit enter....." aria-label="Type and hit enter">
+						<div class="input-group-append">
+							<button class="search-btn" type="submit" form="headsearchform"><i class="mdi mdi-magnify"></i></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Header -->
+	<header class="header">
+		<div class="topbar">
+			<div class="container">
+				<div class="row">					
+					<div class="col-lg-12">
+						<div class="topbar-right">
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 col-md-3">
+						<div class="menubar">
+							<a id="menu-open-btn" class="btn-header">
+								<i class="mdi mdi-menu"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-6 col-md-6">
+						<div class="logobar text-center">
+							<a asp-controller="Home" asp-action="Page" asp-route-slug="/" class="nav-link"><img src="images/logo_small.png" class="img img-responsive" alt="logo" /></a>
+						</div>
+					</div>
+					<div class="col-3 col-md-3">
+						<div class="searchbar text-right">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start breadcrumb -->
+	<div class="breadcrumb-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="/" class="text-dim">Home</a></li>
+							@if ((string)pageTitle != "Blog")
+							{
+								<li class="breadcrumb-item"><a href="#" class="text-dim">@pageTitle</a></li>
+							}
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="content-section">
+		<div class="container">
+			@RenderBody()
+		</div>
+	</section>
+	<!-- Start Footer -->
+	<footer class="footer section text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-logo">
+						<img src="images/logo_small.png" class="img img-responsive" alt="logo" />
+					</div>
+					<div class="footer-social">
+						<ul class="list-inline social mb-0">
+							<li class="list-inline-item"><a href="https://www.facebook.com/Nodoubt223rd" class="social-icon"><i class="mdi mdi-facebook"></i> Facebook</a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/nodoubt223rd" class="social-icon"><i class="mdi mdi-twitter"></i> Twitter</a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/nodoubt223rd/" class="social-icon"><i class="mdi mdi-instagram"></i> Instagram</a></li>						
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/brett-murphy-2297a018/" class="social-icon"><i class="mdi mdi-linkedin"></i> LinkedIn</a></li>
+						</ul>
+					</div>
+					<div class="footer-copyright">
+						<p class="copy-rights mb-0">© @DateTime.Now.Year Nodoubt223rd. All Right Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	<!-- Start Back to top -->
+	<a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
+	<!-- End Back to top -->
+	<!-- Load JS -->
+	<script src="~/js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="~/js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="~/js/owl.carousel.min.js"></script>
+	<!-- Isotop JS -->
+	<script src="~/js/isotope.pkgd.min.js"></script>
+	<!-- Custom JS -->
+	<script src="~/js/custom.js"></script>
+</body>
+</html>
