@@ -1,7 +1,8 @@
 ﻿@inject IContentService ApiClient
 
-@{ 
-    var pages = await ApiClient.GetPagesAsync();
+@{
+	var pages = await ApiClient.GetPagesAsync();
+	var pageTitle = @ViewData["Title"];
 }
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -114,6 +115,10 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="/" class="text-dim">Home</a></li>
+							@if ((string)pageTitle != "Blog")
+							{
+								<li class="breadcrumb-item"><a href="#" class="text-dim">@pageTitle</a></li>
+							}
 						</ol>
 					</nav>
 				</div>
